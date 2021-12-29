@@ -1,0 +1,417 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 23, 2021, 9:19:01 PM
+    Author     : stmar
+*/
+
+:root 
+{
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after
+{
+    box-sizing: inherit;
+}
+
+html/*There is an error but it works anyway, thanks Stack overflow*/
+{
+    scroll-behavior:smooth;
+}
+
+body
+{
+    background-color: #3D3F33;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+body * + *
+{
+    margin-top: 1.5em;
+    overflow-x: hidden;
+}
+
+input
+{
+    text-align: center;
+}
+textarea
+{
+    text-align: center;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+
+.main_logo /*dynamically size the main logo*/
+{
+    width: 15%;
+    max-width: 300px;
+    height: auto;
+}
+
+
+.Container /* container that is housing components*/
+{
+    max-width: 1080px;
+    margin: 0 auto;
+    background-color: #323A3D;
+    box-shadow: 15px 4px 4px rgba(0, 0, 0, 0.25), -15px 0px 4px rgba(0, 0, 0, 0.25);
+    
+  
+}
+
+.running_header /*row that contains navigation links and logos*/
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;/*start of fixed navbar*/
+    top: 0;
+    
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    background-color: #323A3D;
+    box-shadow: 15px 0px  rgba(0, 0, 0, 0.15), -15px 0px  rgba(0, 0, 0, 0.15);
+    z-index: 2; /*fixed floating hero image, and slider content*/
+}
+
+
+
+.top_buffer /*add spacing for the fixed nav bar*/
+{
+    margin-top: 50vh;   
+}
+
+
+
+.Nav_list
+{
+    margin-top: 0;
+    flex: 0 1 90%; /* gave the links more room on the title bar*/
+    color:#EDF0EE;
+}
+
+.navi_list li /*The actual navigation links*/
+{
+    
+    display:inline-flex;
+    padding-left: 8vw;
+    font-size: 4vh;
+    list-style: none;
+    margin: 0;
+    
+}
+
+a:visited
+{
+    color:#EDF0ee;
+}
+
+a:link/* good damn underline would not go away*/
+{
+    text-decoration: none!important;
+    color:#EDF0ee
+}
+
+a:hover /*Hover psuedo class must come after link and visited in order to take effect*/
+{
+    color:#79B4B7;
+}
+
+
+.Hero_Box_Background /*Large rectangle with text and hero image*/
+{   
+    
+    width:90%;
+    margin: 0 auto; /* centering items*/
+    background: #F8F0DF;
+    max-height: 80%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 18px; 
+}
+
+.Circle_for_Image /*Controls circle that holds main photo*/
+{
+    
+    background-image: url(fancy_suit.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 4vw;/*center the photo for hero*/
+    padding-top:60%;/*Responsive circle for the win!!!*/
+    width:60%;
+    height:auto;
+    margin-bottom: -30%; /*Got rid of gap between greeting and image--magic number*/
+    border-radius: 50%;
+    box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.45);
+    position:relative;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+.About_Me_Background
+{
+    max-width: 90%;
+    padding-bottom:1em;
+    background: #283447;
+    margin: 0 auto; /* centering items*/
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 18px; 
+}
+
+.Contact_Me_Form
+{
+    max-width: 90%;
+    background: #706C61;
+    margin: 0 auto; /* centering items*/
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 18px;
+    min-height: 100%;
+    padding:20px;
+}
+
+.main_logo /*Sizing logo*/
+{
+    
+    max-height: 10vh;
+    max-width: 10vw;
+}
+
+.Footer_Container
+{
+    max-width: 80%;
+    background: #F8F0DF;
+    margin: 0 auto; /* centering items*/
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 18px;
+    max-height: 70%;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #283447;
+   
+}
+
+.farewell_message
+{
+    text-align: center;
+    position:relative;
+    font-size: 3vw;
+    margin:0;   
+}
+
+#hero_greeting /* controlling styling of hero greeting*/
+{    
+     display: grid;
+     text-align: center;
+     margin-top: 0;
+     font-size: 15vh;
+     color: #283447;
+     text-shadow: 0px 5px 4px rgba(0,0,0,0.8);
+}
+#AboutmePara /* controlling styling of about me paragraph*/
+{
+    padding:1em;
+    font-size: 4vh;
+    font-weight: bold;
+    color: #EDF0ee;
+}
+
+#word_resume/* controlling styling resume download button*/
+{
+    margin: 0 auto;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+    color: #EDF0ee;
+    width:40vw;
+    height:1.5em;
+    background-color: #8c818E;
+    border-radius:25px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.63);
+    
+}
+
+#word_resume:hover
+{
+    color:#79B4B7;
+}
+
+
+#Contact_Title
+{
+    font-size: 4vh;
+    display:flex;
+    justify-content: center;
+    color: #283447;
+    padding-top: 10px;
+}
+
+
+
+#first_name
+{
+    font-size: 4vh;
+    background-color: #EDF0EE;
+    font-family: 'Signika Negative', sans-serif;
+    position:relative;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    color: #283447;
+    width: 50vw;
+    height: 6vh;
+    border-radius: 19px;
+    
+}
+
+
+#last_name
+{
+    font-size: 4vh;
+    background-color: #EDF0EE;
+    font-family: 'Signika Negative', sans-serif;
+    position:relative;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    color: #283447;
+    width: 50vw;
+    height: 6vh;
+    border-radius: 19px;
+    
+}
+
+
+#email
+{
+    font-size: 4vh;
+    background-color: #EDF0EE;
+    font-family: 'Signika Negative', sans-serif;
+    position:relative;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    color: #283447;
+    width: 50vw;
+    height: 6vh;
+    border-radius: 19px;
+    
+}
+
+#message_area
+{
+    font-size: 4vh;
+    background-color: #EDF0EE;
+    position:relative;
+    left:50%;
+    top:10%;
+    transform: translate(-50%, -10%);
+    color: #283447;
+    width: 50vw;
+    height: 30vh;
+    border-radius: 19px;
+    
+}
+
+#submit_button
+{
+    margin: 0 auto;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+    color: #EDF0ee;
+    width:40vw;
+    height:1.5em;
+    background-color: #8c818E;
+    border-radius:19px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.63);
+    font-family: 'Signika Negative', sans-serif;
+   
+}
+
+#submit_button:hover
+{
+    color:#79B4B7;
+}
+
+
+#github
+{
+    margin-bottom: 3vh;
+    width: 10vw;
+    height: 10vh;   
+}
+
+#linkedin
+{
+    width: 10vw;
+    height: 10vh;
+}
+
+@media only screen and (max-width:600px)
+{
+    .top_buffer
+    {
+        margin-top: 30vh;
+    }
+    .main_logo /*Sizing logo*/
+    {
+        margin-left: 2vw;
+    }
+    
+    .navi_list li /*not best practice, Will change soon!*/
+    {
+        padding-left: 3vw !important;
+        font-size: 3vh !important;
+        
+    }
+    .running_header
+    {
+        text-align: center;
+        margin-left: -2vw;
+        max-width: 600px;
+        
+    }
+    
+    .Nav_list
+    {
+       margin-left: -60%;
+       
+    }
+    #github
+    {
+        margin-bottom: 7vw;
+        width: 10vw;
+        height: 10vh; 
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+/*magic numbers are terrible but right now I need something that works*/
+    #linkedin
+    {
+        width: 10vw;
+        height: 10vh;
+    }
+    .farewell_message
+    {
+        font-size: 3vw;
+        
+    }
+    .Footer_Container
+    {
+        max-width: 70%;
+    }
+   
+}

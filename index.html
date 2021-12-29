@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Noah's portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" sizes="40x40" href="Chosen_Logo_Favicon.svg"/>
+        <link rel="stylesheet" href="styles.css" media="all" type="text/css" />
+        <link rel="stylesheet" href="Photo_Slider_CSS.css" media="all" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <main class="Container">
+        
+        <!-- Top bar -->
+        <div class="row">
+            <div class="Column-2and4">
+                <div class="running_header">
+                    <img class="main_logo" src="Chosen_Logo_Favicon.svg" alt="logo item">
+                    <div class ="Nav_list">
+                        <nav class="navi_list">
+                             <ul class="site_list">
+                                 <li><a href="#">About Me</a></li>
+                                 <li><a href="#Gallery_area">Gallery</a></li>
+                                 <li><a href="#Contact_Form">Contact</a></li>
+                        </nav>
+                    </div>
+                            
+                </div>
+            </div>
+            
+            <!-- hero Section -->
+            <div class="row">
+              <div class="top_buffer">
+                <div class="all columns">
+                    <div class="Hero_Box_Background">
+                    <div class="Circle_for_Image"></div>
+                    <p id="hero_greeting"> Hi, I'm Noah!</p>
+                    </div>
+                            
+                </div>
+              </div>
+            </div>
+            
+            <!--About me Section-->
+            <div class="row">
+            <div class="all columns">
+                <div class="About_Me_Background">
+                    <p id="AboutmePara"> Thank you for viewing my web portfolio! Below, I've attached a copy of my resume as well as photos of work I've done for Tesla, UML diagrams I've drawn, and JavaFX GUIs I've made. <br><Br>
+                        It has been exciting to observe how PLCs (programmable logic controllers) implement object-oriented concepts.<br><br>
+                        My background in industrial automation has fueled my desire to work in the software development industry. I decided to pursue a bachelor's degree in Computer Science in order to broaden my foundation in software development. Some of my areas of interest include DevOps, Linux Administration, Cloud Computing, and Full Stack Software Development.<br></p>
+                        <a class="Resume_Download" href="Resume_V1.pdf" target="_blank">
+                            <p id="word_resume"> Resume </p>
+                        </a>
+                    </div>
+                            
+                </div>
+            </div>
+            
+          </div>
+            
+            <!--Photo carousel refer to specific CSS-->
+             <div class="row">
+            <div class="all columns">
+                <div id="Gallery_area"> <!--Photo Gallery Section-->
+                    <input type="radio" name="Gallery_area" id="slide1" checked><!--Radio buttons-->
+                    <input type="radio" name="Gallery_area" id="slide2" checked>
+                    <input type="radio" name="Gallery_area" id="slide3" checked>
+                    <input type="radio" name="Gallery_area" id="slide4" checked>
+                    <input type="radio" name="Gallery_area" id="slide5" checked>
+                    <input type="radio" name="Gallery_area" id="slide6" checked>
+                    <input type="radio" name="Gallery_area" id="slide7" checked>
+                    <input type="radio" name="Gallery_area" id="slide8" checked>
+                    <input type="radio" name="Gallery_area" id="slide9" checked>
+                    <input type="radio" name="Gallery_area" id="slide10" checked>
+                    <input type="radio" name="Gallery_area" id="slide11" checked>
+                    <input type="radio" name="Gallery_area" id="slide12" checked>
+                    <input type="radio" name="Gallery_area" id="slide13" checked>
+                    <input type="radio" name="Gallery_area" id="slide14" checked>
+                    <input type="radio" name="Gallery_area" id="slide15" checked>
+                    
+                    <div id="gallery_container">
+                        <div id="overflow">
+                            <div class="inner">
+                                <!--image elements & photo one-->
+                                <div class="slide slide_1">
+                                    <div class="slide-content">
+                                        <h2>Electrical Cabinet build</h2>
+                                        <p>I used electrical schematics to install and wire up these components. This cabinet is mainly used to power a machine's servo drives.</p>
+                                  </div>
+                                </div>
+                                
+                                <!--image elements & photo two-->
+                                <div class="slide slide_2">
+                                    <div class="slide-content">
+                                        <h2>World's Largest Die Cast Machine Project</h2>
+                                        <p>This was one of the biggest successes of my career. We built two of these machines over the span of 6 months.</p>
+                                    </div>
+                                </div>
+                                
+                                <!--image elements & photo three-->
+                                <div class="slide slide_3">
+                                    <div class="slide-content">
+                                        <h2>Custom Junction boxes for Die Cast Machines </h2>
+                                        <p>These little junction boxes were created on the fly by myself for wiring up some control devices.</p>
+                                    </div>
+                                </div>
+                                
+                                <!--image elements & photo four-->
+                                <div class="slide slide_4">
+                                    <div class="slide-content">
+                                        <h2>Posing with Die Cast Machine Robots</h2>
+                                        <p>These robots are responsible for lubricating the molds on the machine, I had to position them for their end of arm tool installations.</p>
+                                    </div>
+                                </div>
+                                
+                                <!--image elements & photo five-->
+                                <div class="slide slide_5">
+                                    <div class="slide-content">
+                                        <h2>Die Cast Machine Control Cabinet</h2>
+                                        <p>One of the seven PLC's responsible for operating different parts of the die cast machine.</p>
+                                    </div>
+                                </div>
+                                
+                                 <!--image elements & photo six-->
+                                <div class="slide slide_6">
+                                    <div class="slide-content">
+                                        <h2>My toolbox test bench</h2>
+                                        <p>A PLC I installed on my toolbox to practice programming and test control devices.</p>
+                                    </div>
+                                </div>
+                                 
+                                 <!--image elements & photo seven-->
+                                <div class="slide slide_7">
+                                    <div class="slide-content">
+                                        <h2>Diagram of Electrical Monitoring System Proposal</h2>
+                                        <p>I enjoy making graphics for project proposals. I proposed this system to be installed on several pieces of our equipment.</p>
+                                    </div>
+                                </div>
+                                 
+                                 <!--image elements & photo eight-->
+                                <div class="slide slide_8">
+                                    <div class="slide-content">
+                                        <h2>Diagram of Object Oriented Relationships</h2>
+                                        <p>I created this diagram for my object oriented design class.</p>
+                                    </div>
+                                </div>
+                                 
+                                 <!--image elements & photo nine-->
+                                <div class="slide slide_9">
+                                    <div class="slide-content">
+                                        <h2>UML Class Diagram</h2>
+                                        <p>A UML diagram I created for a programming class.</p>
+                                    </div>
+                                </div>
+                                
+                                   <!--image elements & photo ten-->
+                                <div class="slide slide_10">
+                                    <div class="slide-content">
+                                        <h2>UML Class Diagram</h2>
+                                        <p>A UML diagram I created for my object oriented design class.</p>
+                                    </div>
+                                </div>
+                                
+                                   <!--image elements & photo eleven-->
+                                <div class="slide slide_11">
+                                    <div class="slide-content">
+                                        <h2>UML Domain Model Diagram</h2>
+                                        <p>A domain model diagram I created for my object oriented design class.</p>
+                                    </div>
+                                </div>
+                                   
+                                <!--image elements & photo twelve-->
+                                <div class="slide slide_12">
+                                    <div class="slide-content">
+                                        <h2>UML Sequence Diagram</h2>
+                                        <p>A sequence diagram I created for my object oriented design class.</p>
+                                    </div>
+                                </div>
+                                
+                                <!--image elements & photo thirteen-->
+                                <div class="slide slide_13">
+                                    <div class="slide-content">
+                                        <h2>Mock-up of an embedded security GUI</h2>
+                                        <p>A JavaFX application I created for my object oriented design class. We had to create a security system.</p>
+                                    </div>
+                                </div>
+                                
+                                <!--image elements & photo fourteen-->
+                                <div class="slide slide_14">
+                                    <div class="slide-content">
+                                        <h2>Mock-up of an embedded security GUI</h2>
+                                        <p>A JavaFX application I created for my object oriented design class. We had to create a security system.</p>
+                                    </div>
+                                </div>
+                                
+                                <!--image elements & photo fifteen-->
+                                <div class="slide slide_15">
+                                    <div class="slide-content">
+                                        <h2>Graph Data Structure Personal Project GUI</h2>
+                                        <p>A JavaFX application I am working on to reinforce my understanding of tying SQL databases to Java, as well as solidifying my understanding of graph data structures. </p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>  
+                    </div>
+                    
+                    <!-- referring to the radial buttons-->
+                    <div id='bullets'>
+                        <label for='slide1'></label>
+                        <label for='slide2'></label>
+                        <label for='slide3'></label>
+                        <label for='slide4'></label>
+                        <label for='slide5'></label>
+                        <label for='slide6'></label>
+                        <label for='slide7'></label>
+                        <label for='slide8'></label>
+                        <label for='slide9'></label>
+                        <label for='slide10'></label>
+                        <label for='slide11'></label>
+                        <label for='slide12'></label>
+                        <label for='slide13'></label>
+                        <label for='slide14'></label>
+                        <label for='slide15'></label>
+                    </div>
+                
+                </div>
+            </div>
+           </div>
+            
+            
+               <!-- Submit Form Section-->
+            <div class="row">
+            <div class="all columns">
+               <div id="Contact_Form">
+                <div class="Contact_Me_Form">
+                    <form id="contact-me" action="https://formspree.io/f/xvolggvg" method="POST">
+                        <label id="Contact_Title"> Contact Me </label>
+                        <input type="text" id="first_name" name="fname" placeholder="First Name" required>
+                        <input type="text" id="last_name" name="lname" placeholder="Last Name" required>
+                        <input type="text" id="email" name="_replyto" placeholder="Email" required>
+                        <textarea id="message_area" name="message" placeholder="Leave a Message" ></textarea> 
+                        <input type="submit" id="submit_button" value="Submit">
+                            
+                    </form> 
+                    </div>
+               </div>         
+                </div>
+            </div>
+               
+               <!--Footer with links-->
+               
+               <div class="row">
+            <div class="all columns">
+               <div id="Footer_Links">
+                <div class="Footer_Container">
+                    <a  href="https://www.linkedin.com/in/noah-st-mark/" target="_blank">
+                        <img id="linkedin" src="icons8-linkedin-40.svg" alt="linkedin icon">  
+                    </a>
+                    <a  href="https://github.com/stmark707">
+                      <img id="github" src="icon8-github_edit.svg" alt="github icon">  
+                    </a>
+                    <p class="farewell_message"> Thank you for stopping by! </p>
+                    </div>
+               </div>         
+                </div>
+            </div>
+               
+               
+               
+               
+               
+        </main>  
+    </body>
+</html>
