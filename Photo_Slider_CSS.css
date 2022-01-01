@@ -1,0 +1,590 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 25, 2021, 9:51:55 PM
+    Author     : stmar
+*/
+
+
+#Gallery_area
+{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 100%;
+    text-align: center;
+    
+    
+}
+
+#Gallery_area input[type=radio]
+{
+    display:none;
+}
+
+#Gallery_area label
+{
+    cursor:pointer;
+    text-decoration: none;
+}
+
+#gallery_container
+{
+    padding:10px;
+    border: 3px solid #283447;
+    background: #283447;
+    position:relative;
+    z-index:1;
+    border-radius: 18px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+#overflow
+{
+    width:100%;
+    overflow:hidden;
+    
+}
+
+#slide1:checked ~ #gallery_container .inner
+{
+    margin-left:0%;
+}
+
+#slide2:checked ~ #gallery_container .inner
+{
+    margin-left:-100%;
+}
+
+#slide3:checked ~ #gallery_container .inner
+{
+    margin-left:-200%;
+}
+
+#slide4:checked ~ #gallery_container .inner
+{
+    margin-left:-300%;
+}
+
+#slide5:checked ~ #gallery_container .inner
+{
+    margin-left:-400%;
+}
+
+#slide6:checked ~ #gallery_container .inner
+{
+    margin-left:-500%;
+}
+
+#slide7:checked ~ #gallery_container .inner
+{
+    margin-left:-600%;
+}
+
+#slide8:checked ~ #gallery_container .inner
+{
+    margin-left:-700%;
+}
+
+#slide9:checked ~ #gallery_container .inner
+{
+    margin-left:-800%;
+}
+
+#slide10:checked ~ #gallery_container .inner
+{
+    margin-left:-900%;
+}
+
+#slide11:checked ~ #gallery_container .inner
+{
+    margin-left:-1000%;
+}
+
+#slide12:checked ~ #gallery_container .inner
+{
+    margin-left:-1100%;
+}
+
+#slide13:checked ~ #gallery_container .inner
+{
+    margin-left:-1200%;
+}
+
+#slide14:checked ~ #gallery_container .inner
+{
+    margin-left:-1300%;
+}
+
+#slide15:checked ~ #gallery_container .inner
+{
+    margin-left:-1400%;
+}
+
+#gallery_container .inner /*aligns items to dot, percentage of total*/
+{
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 1500%;
+    line-height: inherit; /*This fixed the crazy annoying vertical overflow problem*/
+    height: 60vh;
+  
+}
+
+#gallery_container .slide
+{
+    width:6.66666%; /* divide the number of elements by 100*/
+    float:left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:80%;
+    color:#EDF0EE;
+}
+
+#gallery_container .slide_1
+{
+    background-image: url(Photo_One.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    
+    
+}
+
+#gallery_container .slide_2
+{
+    background-image: url(Photo_Two.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_3
+{
+    background-image: url(Photo_Three.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_4
+{
+    background-image: url(Photo_Four.jpg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_5
+{
+    background-image: url(Photo_Five.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_6
+{
+    background-image: url(Photo_Six.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_7
+{
+    background-image: url(Photo_Seven.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_8
+{
+    background-image: url(Photo_Eight.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_9
+{
+    background-image: url(Photo_Nine.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_10
+{
+    background-image: url(Photo_Ten.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_11
+{
+    background-image: url(Photo_Eleven.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_12
+{
+    background-image: url(Photo_Twelve.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_13
+{
+    background-image: url(Photo_Thirteen.PNG);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_14
+{
+    background-image: url(Photo_Fourteen.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_15
+{
+    background-image: url(Photo_Fifteen.PNG);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide-content 
+{
+    background: #283447;
+    width: 100%;
+    margin: 0;
+    margin-top: 100vh;
+    
+}
+
+
+
+#bullets
+{
+    margin: 15px 0 0;
+    text-align: center;
+}
+
+#bullets label
+{
+    display: inline-block;
+    padding-top: 2vw;
+    width:2vw;
+    height:auto;
+    border-radius: 50%;
+    background: #EDF0EE;
+    margin: 0 10px;
+    margin-bottom: 5px;
+    transition: opacity 0.2s ease-out;
+}
+
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4),
+#slide5:checked ~ #bullets label:nth-child(5),
+#slide6:checked ~ #bullets label:nth-child(6),
+#slide7:checked ~ #bullets label:nth-child(7),
+#slide8:checked ~ #bullets label:nth-child(8),
+#slide9:checked ~ #bullets label:nth-child(9),
+#slide10:checked ~ #bullets label:nth-child(10),
+#slide11:checked ~ #bullets label:nth-child(11),
+#slide12:checked ~ #bullets label:nth-child(12),
+#slide13:checked ~ #bullets label:nth-child(13),
+#slide14:checked ~ #bullets label:nth-child(14),
+#slide15:checked ~ #bullets label:nth-child(15)
+{
+    background:#79B4B7;
+}
+
+
+@media screen and (max-width:900px)
+{
+#gallery_container
+{
+    max-width: calc(100%-140px);
+    margin: 0 auto;
+}
+   /* #slide1:checked ~ #Arrows label:nth-child(1),
+    #slide2:checked ~ #Arrows label:nth-child(2),
+    #slide3:checked ~ #Arrows label:nth-child(3),
+    #slide4:checked ~ #Arrows label:nth-child(4),
+    #slide5:checked ~ #Arrows label:nth-child(5),
+    #slide6:checked ~ #Arrows label:nth-child(6),
+    #slide7:checked ~ #Arrows label:nth-child(7),
+    #slide8:checked ~ #Arrows label:nth-child(8),
+    #slide9:checked ~ #Arrows label:nth-child(9),
+    #slide10:checked ~ #Arrows label:nth-child(10),
+    #slide11:checked ~ #Arrows label:nth-child(11),
+    #slide12:checked ~ #Arrows label:nth-child(12),
+    #slide13:checked ~ #Arrows label:nth-child(13),
+    #slide14:checked ~ #Arrows label:nth-child(14),
+    #slide15:checked ~ #Arrows label:nth-child(15),
+    #slide1:checked ~ #Arrows label:nth-child(1),
+    #slide2:checked ~ #Arrows label:nth-child(2),
+    #slide3:checked ~ #Arrows label:nth-child(3),
+    #slide4:checked ~ #Arrows label:nth-child(4),
+    #slide5:checked ~ #Arrows label:nth-child(5),
+    #slide6:checked ~ #Arrows label:nth-child(6),
+    #slide7:checked ~ #Arrows label:nth-child(7),
+    #slide8:checked ~ #Arrows label:nth-child(8),
+    #slide9:checked ~ #Arrows label:nth-child(9),
+    #slide10:checked ~ #Arrows label:nth-child(10),
+    #slide11:checked ~ #Arrows label:nth-child(11),
+    #slide12:checked ~ #Arrows label:nth-child(12),
+    #slide13:checked ~ #Arrows label:nth-child(13),
+    #slide14:checked ~ #Arrows label:nth-child(14),
+    #slide15:checked ~ #Arrows label:nth-child(15)
+    {
+        margin: 0;
+    }*/
+
+
+}
+
+@media only screen and (max-width: 600px)
+{
+    #gallery_container .inner /*aligns items to dot, percentage of total*/
+{
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 1500%;
+    line-height: inherit; 
+    height: 60vh;
+    
+}
+
+#gallery_container .slide-content 
+{
+    background: #283447;
+    width: 100%;
+    margin: 0;
+    margin-top: 10vh;
+    visibility: hidden;
+    
+    
+}
+
+
+
+    #gallery_container .slide
+{
+    width:6.66666%; /* divide the number of elements by 100*/
+    float:left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-height:80%;
+    color:#EDF0EE;
+    overflow: hidden;
+    
+}
+    #gallery_container .slide_1
+{
+    background-image: url(Photo_One.jpg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    
+}
+
+#gallery_container .slide_2
+{
+    background-image: url(Photo_Two.jpg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_3
+{
+    background-image: url(Photo_Three.jpg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_4
+{
+    background-image: url(Photo_Four.jpg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_5
+{
+    background-image: url(Photo_Five.jpg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_6
+{
+    background-image: url(Photo_Six.jpg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_7
+{
+    background-image: url(Photo_Seven.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_8
+{
+    background-image: url(Photo_Eight.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_9
+{
+    background-image: url(Photo_Nine.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_10
+{
+    background-image: url(Photo_Ten.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_11
+{
+    background-image: url(Photo_Eleven.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_12
+{
+    background-image: url(Photo_Twelve.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_13
+{
+    background-image: url(Photo_Thirteen.PNG);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_14
+{
+    background-image: url(Photo_Fourteen.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#gallery_container .slide_15
+{
+    background-image: url(Photo_Fifteen.PNG);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+/* getting rid of bullets for mobile devices adding arrows  */
+   #bullets
+    {
+        display:none;
+    }
+    
+    #Arrows
+    {
+        margin: 0 0 0 0;
+        width: 100%;
+        z-index: 2;
+        position: relative;
+        opacity: .5;
+    }
+    
+    #Arrows label
+    {
+        display: none;
+        height: 40px;
+        width: 40px;
+        transition: opacity 0.2s ease-out;
+    }
+
+
+    #slide1:checked ~ #Arrows label:nth-child(15),
+    #slide2:checked ~ #Arrows label:nth-child(1),
+    #slide3:checked ~ #Arrows label:nth-child(2),
+    #slide4:checked ~ #Arrows label:nth-child(3),
+    #slide5:checked ~ #Arrows label:nth-child(4),
+    #slide6:checked ~ #Arrows label:nth-child(5),
+    #slide7:checked ~ #Arrows label:nth-child(6),
+    #slide8:checked ~ #Arrows label:nth-child(7),
+    #slide9:checked ~ #Arrows label:nth-child(8),
+    #slide10:checked ~ #Arrows label:nth-child(9),
+    #slide11:checked ~ #Arrows label:nth-child(10),
+    #slide12:checked ~ #Arrows label:nth-child(11),
+    #slide13:checked ~ #Arrows label:nth-child(12),
+    #slide14:checked ~ #Arrows label:nth-child(13),
+    #slide15:checked ~ #Arrows label:nth-child(14)
+{
+    background: url(icons8-left-arrow.svg) no-repeat;
+    float:left;
+    margin: 3vw 0 0 20vw;
+    display: block;
+    
+}
+    #slide1:checked ~ #Arrows label:nth-child(2),
+    #slide2:checked ~ #Arrows label:nth-child(3),
+    #slide3:checked ~ #Arrows label:nth-child(4),
+    #slide4:checked ~ #Arrows label:nth-child(5),
+    #slide5:checked ~ #Arrows label:nth-child(6),
+    #slide6:checked ~ #Arrows label:nth-child(7),
+    #slide7:checked ~ #Arrows label:nth-child(8),
+    #slide8:checked ~ #Arrows label:nth-child(9),
+    #slide9:checked ~ #Arrows label:nth-child(10),
+    #slide10:checked ~ #Arrows label:nth-child(11),
+    #slide11:checked ~ #Arrows label:nth-child(12),
+    #slide12:checked ~ #Arrows label:nth-child(13),
+    #slide13:checked ~ #Arrows label:nth-child(14),
+    #slide14:checked ~ #Arrows label:nth-child(15),
+    #slide15:checked ~ #Arrows label:nth-child(1)
+{
+    background: url(icons8-right-arrow.svg) no-repeat;
+    float:right;
+    margin: 3vw 20vw 0 0;
+    display: block;
+    
+}
+
+
+}
